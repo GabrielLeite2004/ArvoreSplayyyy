@@ -1,0 +1,9 @@
+Web proxies: O proxy Squid, por exemplo, utiliza árvores splay para armazenar em cache as páginas da web mais acessadas.
+Ao fazer isso, as páginas mais populares ficam mais próximas da raiz da árvore, sendo acessadas mais rapidamente.
+
+Caches de hardware: Algumas arquiteturas de processadores utilizam árvores splay para gerenciar caches de dados, otimizando o acesso à memória.
+
+Sistemas de Busca por interesses: Redes sociais e Sistemas de Compra virtual que desejam determinar um padrão para cada cliente para que ofereça mais itens daquele mesm
+tipo, assim aumentando a chance de vender
+
+Desenvolvimento será simples para ser usado como base para outros mais complexos

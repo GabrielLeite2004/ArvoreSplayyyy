@@ -1,0 +1,104 @@
+Documentação para Uso da Árvore Splay
+
+Esta documentação explica como utilizar a implementação de uma Árvore Splay em Java,
+incluindo a interface de usuário para operações básicas como inserção, busca, remoção
+e exibição dos elementos.
+
+
+Estrutura do Projeto
+O projeto está dividido em três classes principais, todas dentro do pacote util:
+    ArvoreSplayUI: Classe responsável pela interface de usuário, gerenciando as interações via console.
+    ArvoreSplay: Implementação da Árvore Splay, contendo métodos para inserir, buscar, remover e exibir elementos.
+    No: Representa um nó na árvore, contendo uma chave (valor), ponteiros para os nós esquerdo e direito, e um contador de acessos.
+
+Como Usar
+1. Inicialização
+
+Para iniciar o programa e interagir com a árvore, é necessário criar
+uma instância da classe ArvoreSplayUI e chamar o método iniciar.
+Este método exibirá um menu no console e permitirá ao usuário realizar
+operações na árvore.
+
+Exemplo:
+
+java
+
+package util;
+
+public class Main {
+    public static void main(String[] args) {
+        ArvoreSplayUI ui = new ArvoreSplayUI();
+        ui.iniciar();
+    }
+}
+
+2. Menu de Operações
+
+O programa exibe um menu com as seguintes opções:
+
+    Inserir elemento: Permite inserir um novo elemento na árvore.
+    Buscar elemento: Procura um elemento na árvore e exibe se foi encontrado ou não.
+    Remover elemento: Remove um elemento da árvore.
+    Imprimir estado atual: Exibe o elemento mais recentemente acessado ou inserido.
+    Exibir catálogo (em ordem): Exibe todos os elementos da árvore em ordem crescente.
+    Exibir catálogo por acessos: Exibe todos os elementos ordenados pelo número de acessos (mais acessados primeiro).
+    Sair: Encerra o programa.
+
+3. Detalhes das Operações
+Inserir Elemento
+    Descrição: Adiciona um novo nó com a chave fornecida na árvore.
+    A árvore é organizada para que o nó inserido seja o novo raiz.
+
+Buscar Elemento
+    Descrição: Busca um nó na árvore com a chave especificada.
+    Se encontrado, o nó é trazido para a raiz e o contador de acessos é incrementado.
+
+Remover Elemento
+    Descrição: Remove um nó da árvore. O nó com a chave especificada é trazido
+    para a raiz e então removido, reorganizando a árvore conforme necessário.
+
+Imprimir Estado Atual
+    Descrição: Exibe o elemento que foi mais recentemente acessado ou inserido.
+
+Exibir Catálogo (em Ordem)
+    Descrição: Exibe todos os nós da árvore em ordem crescente de suas chaves.
+
+Exibir Catálogo por Acessos
+    Descrição: Exibe todos os nós da árvore ordenados pelo número de acessos,
+    do mais acessado para o menos acessado.
+
+Exemplo de Uso
+    Iniciando o Programa:
+    Ao iniciar o programa, o usuário verá o menu.
+    Pode-se escolher a opção desejada digitando o número correspondente e
+    pressionando "Enter".
+
+    Inserindo um Elemento:
+    Se o usuário escolher a opção "1" para inserir um elemento,
+    ele será solicitado a fornecer a chave (valor) do novo nó.
+    O elemento será então inserido e exibido como "Elemento inserido."
+
+    Buscando um Elemento:
+    Ao escolher a opção "2", o usuário pode buscar um elemento digitando sua chave.
+    Se o elemento for encontrado, será mostrado como "Elemento encontrado: X". Caso contrário, será exibido "Elemento não encontrado."
+
+    Removendo um Elemento:
+    A opção "3" permite ao usuário remover um elemento pela chave.
+    Se a remoção for bem-sucedida, será exibido "Elemento removido." Se o elemento não for encontrado, será exibido "Elemento não encontrado."
+
+    Imprimindo Estado Atual:
+    A opção "4" exibe o elemento mais recentemente acessado ou inserido.
+
+    Exibindo Catálogo em Ordem:
+    A opção "5" lista todos os elementos da árvore em ordem crescente.
+
+    Exibindo Catálogo por Acessos:
+    A opção "6" mostra os elementos da árvore ordenados pelo número de acessos,
+    do mais acessado para o menos acessado.
+
+Considerações Finais
+
+A Árvore Splay é uma estrutura de dados que se ajusta dinamicamente para
+otimizar as operações de busca, inserção e remoção com base nos padrões de uso.
+Esta implementação básica pode ser expandida para incluir funcionalidades adicionais
+conforme necessário.
